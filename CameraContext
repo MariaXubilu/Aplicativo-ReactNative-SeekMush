@@ -1,0 +1,31 @@
+
+import React, { useState, createContext, useContext, useEffect, useRef } from 'react';
+import { useCameraDevices } from 'react-native-vision-camera';
+
+const CameraContext = createContext();
+
+export const CameraProvider = ({ children }) => {
+  const Camera = useRef(null);
+  const devices = useCameraDevices();
+  const [isCameraReady, setIsCameraReady] = useState(false);
+
+  useEffect(() => {
+    const unsubscribe = navigation.addListener('blur', () => {
+      setIsCameraReady(false);
+    });
+
+    return unsubscribe;
+  }, [navigation]);
+
+  const device = devices?.back;
+
+  return (
+    <CameraContext.Provider value={{ Camera, isCameraReady, device }}>
+      {children}
+    </CameraContext.Provider>
+  );
+};
+
+export const useCamera = () => {
+  return useContext(CameraContext);
+};
