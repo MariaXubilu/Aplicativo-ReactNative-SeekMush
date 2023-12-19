@@ -22,7 +22,7 @@ Você poderá instalar o aplicativo Seek Mush no seu dispositivo Android utiliza
 
 ## Tela de Registro (RegisterScreen)
 
-**Registro de Usuário:**
+1. **Registro de Usuário:**
    - Os usuários podem inserir um nome de usuário, endereço de e-mail e senha para criar uma conta no aplicativo.
    - É realizado um controle de validação para garantir que todos os campos obrigatórios sejam preenchidos.
 
@@ -37,5 +37,8 @@ Você poderá instalar o aplicativo Seek Mush no seu dispositivo Android utiliza
 4. **Feedback Visual:**
    - Quando as senhas digitadas não correspondem, uma mensagem de erro é exibida para alertar os usuários.
    - A tela utiliza animações visuais suaves para uma experiência de usuário agradável.
-
+   - A tela utiliza ícones interativos para mostrar/ocultar senhas, proporcionando maior controle ao usuário.
+  
+5. ### Navegação:
+   - Após o registro bem-sucedido, os usuários são redirecionados para a tela inicial (`Inicial`) do aplicativo.
 
