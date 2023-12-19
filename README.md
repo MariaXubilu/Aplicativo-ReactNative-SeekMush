@@ -1,5 +1,12 @@
-# Aplicativo-ReactNative-SeekMush
+# Aplicativo React Native "SeekMush"
 
+## Sumário
+
+1. [Sobre o Projeto](#sobre-o-projeto)
+2. [Tecnologias Utilizadas](#tecnologias-utilizadas)
+3. [Testando o Aplicativo](#testando-o-aplicativo)
+4. [Tela de Registro (RegisterScreen)](#tela-de-registro-registerscreen)
+   
 ## Sobre o Projeto
 Seek Mush é um aplicativo React Native dedicado à identificação de espécies de fungos por meio de fotografias tiradas com o celular. O aplicativo utiliza tecnologias como Visual Studio Code, Android Studio, Firebase e React Native para proporcionar uma experiência eficiente e interativa aos usuários apaixonados por micologia.
 
@@ -12,3 +19,23 @@ Seek Mush é um aplicativo React Native dedicado à identificação de espécies
 
 ## Testando o Aplicativo
 Você poderá instalar o aplicativo Seek Mush no seu dispositivo Android utilizando o arquivo APK gerado quando o aplicativo estiver concluído.
+
+## Tela de Registro (RegisterScreen)
+
+**Registro de Usuário:**
+   - Os usuários podem inserir um nome de usuário, endereço de e-mail e senha para criar uma conta no aplicativo.
+   - É realizado um controle de validação para garantir que todos os campos obrigatórios sejam preenchidos.
+
+2. **Aceitação de Termos:**
+   - Antes de concluir o registro, os usuários são solicitados a aceitar os Termos de Uso e a Política de Privacidade do aplicativo.
+   - Os usuários podem visualizar os termos clicando nos links fornecidos na tela.
+
+3. **Privacidade e Segurança:**
+   - A tela destaca a importância da privacidade e informa os usuários sobre como suas informações serão coletadas, usadas e protegidas.
+   - As senhas são tratadas com segurança, e os usuários podem optar por mostrar ou ocultar a senha durante a entrada.
+
+4. **Feedback Visual:**
+   - Quando as senhas digitadas não correspondem, uma mensagem de erro é exibida para alertar os usuários.
+   - A tela utiliza animações visuais suaves para uma experiência de usuário agradável.
+
+
