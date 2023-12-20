@@ -6,6 +6,7 @@
 2. [Tecnologias Utilizadas](#tecnologias-utilizadas)
 3. [Testando o Aplicativo](#testando-o-aplicativo)
 4. [Tela de Registro (RegisterScreen)](#tela-de-registro-registerscreen)
+5. [Tela de Login (LoginScreen)](#tela-de-login-loginscreen)
    
 ## Sobre o Projeto
 Seek Mush é um aplicativo React Native dedicado à identificação de espécies de fungos por meio de fotografias tiradas com o celular. O aplicativo utiliza tecnologias como Visual Studio Code, Android Studio, Firebase e React Native para proporcionar uma experiência eficiente e interativa aos usuários apaixonados por micologia.
@@ -41,4 +42,24 @@ Você poderá instalar o aplicativo Seek Mush no seu dispositivo Android utiliza
   
 5. ### Navegação:
    - Após o registro bem-sucedido, os usuários são redirecionados para a tela inicial (`Inicial`) do aplicativo.
+
+## Tela de Login (LoginScreen)
+
+1. # Estrutura do Componente
+- O componente é funcional e utiliza o estado (`useState`) para gerenciar as informações de e-mail, senha e mensagens de erro.
+- As animações de entrada (`fadeInLeft` e `fadeInUp`) proporcionam uma transição suave à medida que a tela é exibida.
+- 
+2. ## Funcionalidades Principais
+   **Autenticação de Usuário:**
+   - A função `signInWithEmailAndPassword` do Firebase é utilizada para autenticar o usuário com o e-mail e senha fornecidos.
+
+   **Recuperação do Nome de Usuário:**
+   - Após o login bem-sucedido, o nome de usuário associado ao UID do usuário é recuperado utilizando a função `getNomeUsuarioByUid`.
+
+   **Feedback ao Usuário:**
+   - Mensagens de erro são exibidas caso ocorra algum problema durante o login, como credenciais inválidas.
+3 ## Integração com Navegação
+
+- Um botão "Cadastre-se aqui" redireciona os usuários para a tela de registro (`Register`) caso ainda não tenham uma conta.
+  
 
