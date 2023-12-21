@@ -7,6 +7,7 @@
 3. [Testando o Aplicativo](#testando-o-aplicativo)
 4. [Tela de Registro (RegisterScreen)](#tela-de-registro-registerscreen)
 5. [Tela de Login (LoginScreen)](#tela-de-login-loginscreen)
+6. [Tela de Controle (App)](#tela-de-controle-app)
    
 ## Sobre o Projeto
 Seek Mush é um aplicativo React Native dedicado à identificação de espécies de fungos por meio de fotografias tiradas com o celular. O aplicativo utiliza tecnologias como Visual Studio Code, Android Studio, Firebase e React Native para proporcionar uma experiência eficiente e interativa aos usuários apaixonados por micologia.
@@ -45,21 +46,33 @@ Você poderá instalar o aplicativo Seek Mush no seu dispositivo Android utiliza
 
 ## Tela de Login (LoginScreen)
 
-1. # Estrutura do Componente
-- O componente é funcional e utiliza o estado (`useState`) para gerenciar as informações de e-mail, senha e mensagens de erro.
-- As animações de entrada (`fadeInLeft` e `fadeInUp`) proporcionam uma transição suave à medida que a tela é exibida.
-- 
-2. ## Funcionalidades Principais
-   **Autenticação de Usuário:**
+1. **Estrutura do Componente**
+   - O componente é funcional e utiliza o estado (`useState`) para gerenciar as informações de e-mail, senha e mensagens de erro.
+   - As animações de entrada (`fadeInLeft` e `fadeInUp`) proporcionam uma transição suave à medida que a tela é exibida.
+  
+2. **Autenticação de Usuário:**
    - A função `signInWithEmailAndPassword` do Firebase é utilizada para autenticar o usuário com o e-mail e senha fornecidos.
 
-   **Recuperação do Nome de Usuário:**
+3.  **Recuperação do Nome de Usuário:**
    - Após o login bem-sucedido, o nome de usuário associado ao UID do usuário é recuperado utilizando a função `getNomeUsuarioByUid`.
 
-   **Feedback ao Usuário:**
+4.  **Feedback ao Usuário:**
    - Mensagens de erro são exibidas caso ocorra algum problema durante o login, como credenciais inválidas.
-3 ## Integração com Navegação
 
-- Um botão "Cadastre-se aqui" redireciona os usuários para a tela de registro (`Register`) caso ainda não tenham uma conta.
-  
+5.  **Integração com Navegação**
+   - Um botão "Cadastre-se aqui" redireciona os usuários para a tela de registro (`Register`) caso ainda não tenham uma conta.
+     
+## Tela de Controle (App)
 
+1. **Estrutura do Componente**
+- O componente `HomeScreen` é responsável por exibir a imagem do logo, uma mensagem de boas-vindas e um botão para acessar a tela de login.
+
+2.  **Logo:**
+  - Uma imagem animada (`zoomIn`) do logo do aplicativo (`mush.png`) é exibida no topo da tela.
+    
+3. **Botão de Acesso:**
+  - Um botão "Acessar" permite que os usuários naveguem para a tela de login.
+
+4. **Navegação**
+- O componente `HomeScreen` está integrado a uma navegação por pilha usando o React Navigation.
+- O botão de acesso (`TouchableOpacity`) aciona a transição para a tela de login (`Login`).
